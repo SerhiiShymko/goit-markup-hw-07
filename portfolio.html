@@ -23,10 +23,10 @@
     <nav class="nav">
       <ul class="nav_list list">
         <li class="nav__item">
-          <a class="nav__link  nav__link--current link" href="./index.html">Студія</a>
+          <a class="nav__link link" href="./index.html">Студія</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+          <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
         </li>
         <li class="nav__item">
           <a class="nav__link link" href="">Контакти</a>
@@ -214,71 +214,72 @@
     </section>
   </main>
   <!-- Footer -->
-  <footer class="footer-page">
-    <div class="container">
-      <div class="logo-box">
-        <a href="./index.html" class="footer-logo-web link">Web<span class="footer-logo-studio">Studio</span></a>
-        <address class="address-page">
-          <ul class="footer-list list">
-            <li>
-              <a class="footer-address link" href="https://goo.gl/maps/Hmn2vppueY355Frk7" target="_blank"
-                rel="noreferrer noopener nofollow">
-                м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="footer-item">
-              <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="join-box">
-        <h2 class="join-title">приєднуйтесь</h2>
-        <ul class="footer-join list">
-          <li class="social-item">
-            <a href="" class="social-link link"><svg class="social-icons" width="20" height="20">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__address">
+      <a href="./index.html" class="footer__logo link">Web<span class="footer__logo-change">Studio</span></a>
+      <address class="footer__address-page">
+        <ul class="footer__list list">
+          <li>
+            <a class="footer__address link" href="https://goo.gl/maps/Hmn2vppueY355Frk7" target="_blank"
+              rel="noreferrer noopener nofollow">
+              м. Київ, пр-т Лесі Українки, 26</a>
           </li>
-          <li class="social-item">
-            <a href="" class="social-link link"><svg class="social-icons" width="20" height="20">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
+          <li class="footer__item">
+            <a class="footer__contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="social-item">
-            <a href="" class="social-link link"><svg class="social-icons" width="20" height="20">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social-link link"><svg class="social-icons" width="20" height="20">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
+          <li class="footer__item">
+            <a class="footer__contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
-      <div class="subscription">
-        <form class="form-subscription">
-          <div class="subscription-mail">
-            <label for="subscription" class="subscription-mail-title">Підпишіться на розсилку</label>
-            <input type="text" id="subscription" name="subscription" class="subscription-input" placeholder="E-mail">
-          </div>
-          <button type="submit" class="subscription-button button">
-            <svg class="icon-subscription" width="24" height="24">
-              <use href="./images/icons.svg#telegram"></use>
-            </svg>
-            Підписатися
-          </button>
-        </form>
-      </div>
+      </address>
     </div>
-  </footer>
+    <div class="footer__join">
+      <h2 class="footer__join-title">приєднуйтесь</h2>
+      <ul class="footer__join-list list">
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link link"><svg class="footer__social-icon" width="20" height="20">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link link"><svg class="footer__social-icon" width="20" height="20">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link link"><svg class="footer__social-icon" width="20" height="20">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link link"><svg class="footer__social-icon" width="20" height="20">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__subscription">
+      <form class="footer__form-subscription">
+        <div class="footer__subscription-mail">
+          <label for="subscription" class="footer__subscription-title">Підпишіться на розсилку</label>
+          <input type="text" id="subscription" name="subscription" class="footer__subscription-input"
+            placeholder="E-mail">
+        </div>
+        <button type="submit" class="footer__subscription-button button">
+          <svg class="footer__subscription-icon" width="24" height="24">
+            <use href="./images/icons.svg#telegram"></use>
+          </svg>
+          Підписатися
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
