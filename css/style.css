@@ -721,7 +721,6 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
   color: var(--main-white-color);
 }
 .footer__join-list {
