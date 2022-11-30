@@ -1,36 +1,78 @@
 .header {
+  @extend %container;
+
   border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-change {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+  }
+  &__logo {
+    @extend %link;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
 }
-.header__container {
+
+.header__group {
+  @extend %list;
+
+  display: flex;
+  margin-left: auto;
+}
+.header__contact {
+  @extend %link;
+
   display: flex;
   align-items: center;
-}
-.header__logo-change {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--black-color);
-}
-.header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 32px 0;
 
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--second-color-text);
+
+  transition: color 250ms var(--timings);
+}
+.header__item + .header__item {
+  margin-left: 50px;
+}
+.header__contact:hover,
+.header__contact:focus {
   color: var(--accent-color);
+}
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .nav {
   margin-left: 93px;
 }
 .nav_list {
+  @extend %list;
   display: flex;
 }
 .nav__link {
+  @extend %link;
+
   display: block;
   padding: 32px 0;
 
@@ -65,33 +107,4 @@
 .nav__link:hover,
 .nav__link:focus {
   color: var(--accent-color);
-}
-.header__group {
-  display: flex;
-  margin-left: auto;
-}
-.header__contact {
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-
-  color: var(--second-color-text);
-
-  transition: color 250ms var(--timings);
-}
-.header__item + .header__item {
-  margin-left: 50px;
-}
-.header__contact:hover,
-.header__contact:focus {
-  color: var(--accent-color);
-}
-.header__icon {
-  margin-right: 10px;
-  fill: currentColor;
 }

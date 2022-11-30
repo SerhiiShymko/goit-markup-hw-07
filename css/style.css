@@ -372,13 +372,13 @@ img {
   fill: transparent;
 }
 
-.chechbox__input:checked + .chackbox__label .checkbox__wrapper {
+.chechbox__input:checked + .checkbox__label .checkbox__wrapper {
   fill: var(--main-white-color);
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
 
-.chechbox__input:focus + .chackbox__label .checkbox__wrapper {
+.chechbox__input:focus + .checkbox__label .checkbox__wrapper {
   border-color: var(--accent-color);
 }
 
