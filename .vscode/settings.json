@@ -1,8 +1,6 @@
-// {
-//     "prettier.bracketSameLine": true
-// }
-
 {
+  "prettier.bracketSameLine": true,
+
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
